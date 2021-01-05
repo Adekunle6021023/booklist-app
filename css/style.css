@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+select {
+    padding: 0.75rem;
+    border-radius: 5px;
+    outline: none;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.header .title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header .bg-toggler {
+    align-self: flex-end;
+    margin: 0 0.5rem;
+}
+
+.info-input {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+.info-input .input {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.booklist {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
