@@ -1,73 +1,119 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booklist App</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+ <head> 
 
-<body>
-    <header class="header">
-        <div class="title-container">
-            <i class="icon"></i>
-            <div class="title">
-                <p>Booker</p>
-                <p>...Stress free book logging</p>
-            </div>
-        </div>
-        <div class="bg-toggler">
-            <input type="checkbox" name="Toggler" id="toggler">
-        </div>
-    </header>
+  <meta charset="UTF-8"> 
 
-    <section class="info-input">
-        <p class="instruct">Please fill out the following fields to log your book info</p>
-        <div class="info-input-1 input">
-            <label for="BookName">Book Name</label>
-            <input type="text" id="BookName" placeholder="Diary Of A Crazy Sloth">
-        </div>
-        <div class="info-input-2 input">
-            <label for="BookAuthor">Book Author</label>
-            <input type="text" id="BookAuthor" placeholder="William Shakespeare, etc.">
-        </div>
-        <div class="info-input-3 input">
-            <label for="BookGenre">Book Genre</label>
-            <select name="BookGenreValue" id="BookGenre" aria-placeholder="Select Book Genre">
-                <option value="" selected disabled>Select...</option>
-                <option value="">Mystical</option>
-            </select>
-        </div>
-        <div class="info-input-4 input">
-            <label for="BookReleaseDate">Book Release Year</label>
-            <input type="number" name="" id="BookRelDate" placeholder="2020">
-        </div>
-        <div class="info-input-5 input">
-            <label for="BookISBN"> Book ISBN</label>
-            <input type="number" id="BookISBN" placeholder="X-XXXX-XXXXX-XXXX-XXX">
-        </div>
-        <a href="#" class="btn">Log It!</a>
-    </section>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <section class="booklist">
-        <table class="table">
-            <thead>
-                <th>Name</th>
-                <th>Author</th>
-                <th>Genre</th>
-                <th>Release Year</th>
-                <th>ISBN</th>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </section>
+  <title>Booklist App</title> 
 
-    <footer class="footer">
-        <p>Adekunle Adedokun &copy; 2020</p>
-    </footer>
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
 
-    <script src="js/script.js"></script>
-</body>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Raleway:ital,wght@0,300;0,400;0,500;1,500&amp;display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="css/style.css"> 
+
+  <script src="https://kit.fontawesome.com/fb477d7a7c.js" crossorigin="anonymous"></script> 
+
+ </head> 
+
+ <body> 
+
+  <header class="header"> 
+
+   <div class="bg-toggler-wrapper"> 
+
+    <div class="toggler"></div> 
+
+   </div> 
+
+   <div class="title-container"> 
+
+    <div class="title">
+
+      . 
+
+     <span class="icon"> <i class="fas fa-book fa-3x"></i> </span> 
+
+     <p class="text-one">Booker</p> 
+
+    </div> 
+
+    <p class="subtitle">...stress free book logging</p> 
+
+   </div> 
+
+  </header> 
+
+  <section class="info-input"> 
+
+   <p class="instruct">Please fill out the following fields to log your book info</p> 
+
+   <form class="form" method="POST"> 
+
+    <div class="info-input-1 input"> 
+
+     <label for="BookName">Book Name</label> 
+
+     <input type="text" id="BookName" placeholder="Diary Of A Crazy Sloth"> 
+
+    </div> 
+
+    <div class="info-input-2 input"> 
+
+     <label for="BookAuthor">Book Author</label> 
+
+     <input type="text" id="BookAuthor" placeholder="William Shakespeare, etc."> 
+
+    </div> 
+
+    <div class="info-input-3 input"> 
+
+     <label for="BookGenre">Book Genre</label> 
+
+     <select name="BookGenreValue" id="BookGenre" aria-placeholder="Select Book Genre"> <option value="" selected disabled>Select...</option> <option value="Mystical">Mystical</option> <option value="Thriller">Thriller</option> <option value="Adventure">Adventure</option> <option value="Romance">Romance</option> <option value="Mystical">Mystical</option> <option value="Fan-Fiction">Fan-Fiction</option> <option value="Historical">Historical</option> <option value="Paranormal">Paranormal</option> <option value="Young Adult">Young Adult</option> </select> 
+
+    </div> 
+
+    <div class="info-input-4 input"> 
+
+     <label for="BookReleaseDate">Book Release Year</label> 
+
+     <input type="number" name="" id="BookRelDate" placeholder="2020"> 
+
+    </div> 
+
+    <div class="info-input-5 input"> 
+
+     <label for="BookISBN">Book ISBN</label> 
+
+     <input type="number" id="BookISBN" placeholder="X-XXXX-XXXX-XXXX"> 
+
+    </div> 
+
+   </form> 
+
+   <a href="#" class="btn">Log It!</a> 
+
+  </section> 
+
+  <section class="booklist"> 
+
+   <div class="book-container"></div> 
+
+  </section> 
+
+  <footer class="footer"> 
+
+   <p>Adekunle Adedokun © 2020</p> 
+
+  </footer> 
+
+  <script src="js/script.js"></script> 
+
+ </body>
 
 </html>
